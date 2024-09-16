@@ -1,0 +1,192 @@
+body {
+    display: flex;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: .03em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: #666;
+    height: 100%;
+}
+/**
+.navBar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1000vh;
+    height: 60px;
+    background-color: #F8F8F8; 
+  }
+    **/
+  .logo{
+
+    top: 10px;
+    margin-right: 40px;
+    margin-left: 10px;
+  }
+  
+  .navBar li:hover{
+    color: #F69270;
+  }
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.img_bg{
+  overflow: hidden;
+  margin-bottom: auto;
+  margin-top: center;
+  position: absolute ;
+  width: 60%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: black;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  padding-inline: 30px;
+  bottom: 25em;
+}
+.section_bg{
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  
+}
+#first_qa{
+  background-image: linear-gradient(to bottom, #F15921, #FDD20D, #10703a84, #2773a668);
+}
+#second_qa{
+  background-image: linear-gradient(to bottom, #F15921, #FDD20D);
+}
+#third_qa{
+  background-image: linear-gradient(to bottom, #10703a84, #2773a668);
+}
+button{
+  display: flex;
+  flex-direction: row;
+}
+/* The dots/bullets/indicators 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  */
+.dot{
+  visibility: hidden;
+}
+form{
+  /** margin-block: 32px 96px; **/
+  padding-inline: 80px;
+  font-size: 16px;
+  line-height: 24px;
+  /** flex: 1 1 0%; **/
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+
+label{
+  color: black;
+}
+
+input{
+  border: 0px solid;
+  border-bottom: 2px solid;
+  background-color: transparent;
+  font-size: 24px;
+  
+}
+::placeholder{
+  color:rgb(223, 223, 223);
+}
+input #value{
+  color: grey;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation 
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+  */
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

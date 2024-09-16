@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WVUM</title>
+    <link href="CSS\style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">  
+    <div class="section_bg" id="first_qa"> 
+      <img src="IMG\title_section.png" class="img_bg" >
+      <h1> your </h1>
+      <h1> WVUM </h1>
+      <h1> unwrapped </h1>
+      
+    </div>
+</div>
+
+    <div class="mySlides fade">
+      <div class="section_bg" id="second_qa"> 
+        <img src="IMG\vinyl_disk.png" class="img_bg" type="vinyl_disk">
+        <div class="numbertext">What's your name? </div>
+        <form>
+          <label for="lname">First name:</label>
+          <input type="text" id="fname" name="fname" placeholder="John" required><br>
+          <label for="lname">Last name:</label> 
+          <input type="text" id="lname" name="lname" placeholder="Doe" required>
+          <button input type="submit" id="submit_1"> Submit </button>
+        </form>
+
+        <div class="text">Product of Text-CIM</div>
+      </div>
+    </div>
+
+
+  <div class="mySlides fade">
+    <div class="section_bg" id="third_qa"> 
+      <img src="IMG\vinyl_disk.png" class="img_bg" type="vinyl_disk">
+      <div class="numbertext">What's your favorite genre? </div>
+      <form>
+        <button> <div>A </div>First</button>
+        <button> <div>B </div>First</button>
+        <button> <div>C </div>First</button>
+        
+      </form>
+
+      <div class="text">Caption Text</div>
+    </div>
+  </div>
+
+  <!-- Next and previous buttons 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  -->
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
