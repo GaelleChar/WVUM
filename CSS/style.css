@@ -99,6 +99,9 @@ img {vertical-align: middle;}
   padding-inline: 30px;
   bottom: 25em;
 }
+#submit_ {
+  z-index: 1000;
+}
 .section_bg{
   top: 50%;
   display: flex;
@@ -114,8 +117,11 @@ img {vertical-align: middle;}
 #second_qa{
   background-image: linear-gradient(to bottom, #F15921, #FDD20D);
 }
-#third_qa{
+#q1, #q3, #q5{
   background-image: linear-gradient(to bottom, #10703a84, #2773a668);
+}
+#q2, #q4{
+  background-image: linear-gradient(to bottom, #F15921, #FDD20D);
 }
 button{
   display: flex;
