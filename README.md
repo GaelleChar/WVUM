@@ -3,13 +3,13 @@
  based off of Typeform and Spotify's Kpop Persona quiz
 
 Quick design:
-<img src="read_me/Desktop - 2.png">
-<img src="read_me/Frame 8.png">
+<img src="read_me/Desktop - 2.png" style="width: 50%;">
+<img src="read_me/Frame 8.png" style="width: 50%;">
 
 Inspo:
-<img src="read_me/Screenshot 2024-09-05 134143.png">
-<img src="read_me/Screenshot 2024-09-05 134203">
-<img src="read_me/typeform-collage-1.webp">
+<img src="read_me/Screenshot 2024-09-05 134143.png" style="width: 50%;">
+<img src="read_me/Screenshot 2024-09-05 134203" style="width: 50%;">
+<img src="read_me/typeform-collage-1.webp" style="width: 50%;">
 
 and the message while inspecting IG:
-<img src="read_me/Screenshot 2024-09-19 024611.png">
+<img src="read_me/Screenshot 2024-09-19 024611.png" style="width: 50%;">
