@@ -14,10 +14,12 @@
   <!-- First Slide -->
   <div class="mySlides fade">  
     <div class="section_bg" id="first_qa"> 
+      <div id="h1">
       <h1> your </h1>
       <h1> WVUM </h1>
       <h1> unwrapped </h1>
-      <button id="submit_"> Start </button> <!-- Change this to a button type="button" -->
+      </div>
+      <button id="submit_" class="button-85"> Start </button> <!-- Change this to a button type="button" -->
       <img src="IMG/title_section.png" class="img_bg">
     </div>
   </div>
@@ -26,7 +28,7 @@
   <div class="mySlides fade">
     <div class="section_bg" id="second_qa"> 
       <img src="IMG/vinyl_disk.png" class="img_bg">
-      <div class="numbertext">What's your name?</div>
+      <div class="numbertext_1">What's your name?</div>
       <form id="name_form">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname" placeholder="John" required><br>
@@ -42,11 +44,11 @@
   <div class="mySlides fade">
     <div class="section_bg" id="q1"> 
       <img src="IMG\vinyl_disk.png" class="img_bg" type="vinyl_disk">
-      <div class="numbertext">What's your favo genre? </div>
+      <div class="numbertext">What's your ideal party setting? </div>
       <form>
-        <button type="button" onclick="handleChoice('a')"> <div>A </div>First</button>
-        <button type="button" onclick="handleChoice('b')"> <div>B </div>First</button>
-        <button type="button" onclick="handleChoice('c')"> <div>C </div>First</button>
+        <button type="button" onclick="handleChoice('a')"> <div>A </div> . Cozy, intimate lounge with dim lighting</button>
+        <button type="button" onclick="handleChoice('b')"> <div>B </div> . Packed club with everyone dancing together </button>
+        <button type="button" onclick="handleChoice('c')"> <div>C </div> . Wild outdoor festival with big crowds and stages </button>
         
       </form>
 
@@ -57,11 +59,11 @@
   <div class="mySlides fade">
     <div class="section_bg" id="q2"> 
       <img src="IMG\vinyl_disk.png" class="img_bg" type="vinyl_disk">
-      <div class="numbertext">What's your favorite genre? </div>
+      <div class="numbertext">Which instrument stands out to you in a track? </div>
       <form>
-        <button type="button" onclick="handleChoice('a')"> <div>A </div>First</button>
-        <button type="button" onclick="handleChoice('b')"> <div>B </div>First</button>
-        <button type="button" onclick="handleChoice('c')"> <div>C </div>First</button>
+        <button type="button" onclick="handleChoice('a')"> <div>A </div>. Guitar riffs that grab your attention </button>
+        <button type="button" onclick="handleChoice('b')"> <div>B </div> . Deep, pulsing bass lines</button>
+        <button type="button" onclick="handleChoice('c')"> <div>C </div>. Unique synths and electronic beats</button>
         
       </form>
 
@@ -72,11 +74,11 @@
   <div class="mySlides fade">
     <div class="section_bg" id="q3"> 
       <img src="IMG\vinyl_disk.png" class="img_bg" type="vinyl_disk">
-      <div class="numbertext">What's your  genre? </div>
+      <div class="numbertext">How do you like your music mixed? </div>
       <form>
-        <button type="button" onclick="handleChoice('a')"> <div>A </div>First</button>
-        <button type="button" onclick="handleChoice('b')"> <div>B </div>First</button>
-        <button type="button" onclick="handleChoice('c')"> <div>C </div>First</button>
+        <button type="button" onclick="handleChoice('a')"> <div>A </div>. Smooth transitions that take me on a journey</button>
+        <button type="button" onclick="handleChoice('b')"> <div>B </div> . High-energy drops that get the crowd hyped</button>
+        <button type="button" onclick="handleChoice('c')"> <div>C </div> . Unexpected mashups that surprise and excite me</button>
         
       </form>
 
@@ -87,11 +89,11 @@
   <div class="mySlides fade">
     <div class="section_bg" id="q4"> 
       <img src="IMG\vinyl_disk.png" class="img_bg" type="vinyl_disk">
-      <div class="numbertext">What's  favorite genre? </div>
+      <div class="numbertext">When do you enjoy listening to music the most? </div>
       <form>
-        <button type="button" onclick="handleChoice('a')"> <div>A </div>First</button>
-        <button type="button" onclick="handleChoice('b')"> <div>B </div>First</button>
-        <button type="button" onclick="handleChoice('c')"> <div>C </div>First</button>
+        <button type="button" onclick="handleChoice('a')"> <div>A </div>. While chilling or relaxing at home</button>
+        <button type="button" onclick="handleChoice('b')"> <div>B </div>. During a workout or when I need a boost</button>
+        <button type="button" onclick="handleChoice('c')"> <div>C </div>. At social gatherings or parties with friends</button>
         
       </form>
 
@@ -102,11 +104,11 @@
   <div class="mySlides fade">
     <div class="section_bg" id="q5"> 
       <img src="IMG\vinyl_disk.png" class="img_bg" type="vinyl_disk">
-      <div class="numbertext">What's your favorite genre? </div>
+      <div class="numbertext">What's your go-to concert outfit? </div>
       <form>
-        <button type="button" onclick="handleChoice('a')"> <div>A </div>First</button>
-        <button type="button" onclick="handleChoice('b')"> <div>B </div>First</button>
-        <button type="button" onclick="handleChoice('c')"> <div>C </div>First</button>
+        <button type="button" onclick="handleChoice('a')"> <div>A </div>. Casual and comfy, like jeans and a band tee</button>
+        <button type="button" onclick="handleChoice('b')"> <div>B </div>. Flashy and bold, with lots of accessories</button>
+        <button type="button" onclick="handleChoice('c')"> <div>C </div>. Something edgy, like a leather jacket and boots</button>
         
       </form>
 
@@ -116,14 +118,30 @@
 
   <div class="mySlides fade">  
     <div class="section_bg" id="q6"> 
-      <h1> your </h1>
-      <h1> WVUM </h1>
-      <h1> unwrapped </h1>
-      <div id="SDRV" style="display: none;"> hello </div>
+      <img src="IMG/final_section.png" class="img_bg">
+      <div  id="h_1">
+        <h1> your </h1>
+        <h1> DJ </h1>
+        <h1> is </h1>
+      </div>
+      <img src="IMG/eye_ahol_1.png" class="img_bg_end_b">
+      <div id="SDRV"> 
+        <img src="IMG/SDRV.png" class="img_bg_end">
+        <h2>SDRV</h2>
+        <p>Steffi aka SDRV began her journey at WVUM with a rotation show in freshman year.
+          She later hosted electronic music show "House of Fusion"  and now makes appearances on the illustrious "EKL",
+          mixing back to back with the host. SDRV is inspired by the local underground community
+          and hopes to pay respect to the rave scene by curating eclectic mixes and showcasing Miami's finest artists.
+        </p>
+        <div id="genre">
+          <h3>techno </h3>
+          <h3>, base</h3>
+          <h3>, spanish</h3>
+        </div>
+         </div>
       <div id="High_Energy_DJ" style="display: none;"> high energy </div>
       <div id="Edgy_Wild_DJ" style="display: none;"> edgy wild </div>
-      <button id="refresh"> Start over </button> <!-- should refresh to first slide -->
-      <img src="IMG/title_section.png" class="img_bg">
+      <button id="refresh" class="button-85"> Start over </button> <!-- should refresh to first slide -->
     </div>
   </div>
 

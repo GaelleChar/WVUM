@@ -103,9 +103,9 @@ function calculateResults() {
   if (highest === 'a') {
     matchedDJ = "SDRV"; // Display SDRV DJ card
   } else if (highest === 'b') {
-    matchedDJ = "High_Energy_DJ"; // Replace with your DJ card
+    matchedDJ = "SDRV"; // Replace with your DJ card
   } else {
-    matchedDJ = "Edgy_Wild_DJ"; // Replace with your DJ card
+    matchedDJ = "SDRV"; // Replace with your DJ card
   }
 
   displayResult(matchedDJ); // Show the result
