@@ -103,9 +103,9 @@ function calculateResults() {
   if (highest === 'a') {
     matchedDJ = "SDRV"; // Display SDRV DJ card
   } else if (highest === 'b') {
-    matchedDJ = "SDRV"; // Replace with your DJ card
+    matchedDJ = "Silvia"; // Replace with your DJ card
   } else {
-    matchedDJ = "SDRV"; // Replace with your DJ card
+    matchedDJ = "Alex_Miller"; // Replace with your DJ card
   }
 
   displayResult(matchedDJ); // Show the result
@@ -116,16 +116,16 @@ function displayResult(matchedDJ) {
   
   // Hide all DJ containers
   document.getElementById("SDRV").style.display = "none";
-  document.getElementById("High_Energy_DJ").style.display = "none";
-  document.getElementById("Edgy_Wild_DJ").style.display = "none";
+  document.getElementById("Silvia").style.display = "none";
+  document.getElementById("Alex_Miller").style.display = "none";
 
   // Show the matched DJ container
   if (matchedDJ === 'SDRV') {
     document.getElementById("SDRV").style.display = "block";
-  } else if (matchedDJ === 'High_Energy_DJ') {
-    document.getElementById("High_Energy_DJ").style.display = "block";
+  } else if (matchedDJ === 'Silvia') {
+    document.getElementById("Silvia").style.display = "block";
   } else {
-    document.getElementById("Edgy_Wild_DJ").style.display = "block";
+    document.getElementById("Alex_Miller").style.display = "block";
   }
 
   // Show the results slide
