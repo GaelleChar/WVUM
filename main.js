@@ -1,7 +1,7 @@
-let slideIndex = 1; // Start with the first slide
-const responses = {}; // Object to store all responses
+let slideIndex = 1; 
+const responses = {};
 let finalSlideIndex = 6; // Final slide
-// Show the initial slide
+// initial slide
 showSlides(slideIndex);
 
 // Event listener for "Submit" button
@@ -10,7 +10,6 @@ startButton.onclick = () => {
   showSlides(++slideIndex); 
 };
 
-// Event listener for the name submission button
 let submitNameButton = document.getElementById("submit_1");
 submitNameButton.onclick = handleNameSubmission;
 
@@ -27,7 +26,7 @@ document.addEventListener("keypress", function(event) {
   }
 });
 
-// Function to handle name submission
+// Handle name submission
 function handleNameSubmission() {
 
   let fname = document.getElementById("fname").value.trim();
@@ -43,15 +42,15 @@ function handleNameSubmission() {
 };
 
 function handleChoice(choice) {
+  const currentQuestionId = `q${slideIndex - 2}`; // Dismiss first two slides
+  responses[currentQuestionId] = choice; // Store the user's choice
 
-  const currentQuestionId = `q${slideIndex - 2}`; // Adjusting for the first two slides
-  
-  // Store the user's choice
-  responses[currentQuestionId] = choice;
-  
-  showSlides(++slideIndex);
-  
-  console.log(responses); 
+  if (slideIndex === finalSlideIndex + 1 ) { 
+    calculateResults(); 
+  } else if (slideIndex === finalSlideIndex + 2 ) {
+    console.log("/")
+  } else { showSlides(++slideIndex); 
+  }
 }
 
 document.getElementById("refresh").onclick = function() {
@@ -63,21 +62,13 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
 
-  // Check if n is within the valid range
-  if (n > slides.length) {
-    slideIndex = 1; 
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  // Hide all slides
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
 
-  // Show the current slide
-  slides[slideIndex - 1].style.display = "block";  
+  if (n <= slides.length) {
+    slides[n - 1].style.display = "block";
+  }
 }
 
 function calculateResults() {
@@ -90,45 +81,41 @@ function calculateResults() {
     }
   }
 
-  // Determine the highest response
-  let highest = 'a'; // Default to 'a'
+  // Determine highest response
+  let highest = 'a'; 
   for (let key in responseCount) {
     if (responseCount[key] > responseCount[highest]) {
       highest = key;
     }
   }
 
-  // Match based on the highest response count
+  // Match based on highest response count
   let matchedDJ;
   if (highest === 'a') {
-    matchedDJ = "SDRV"; // Display SDRV DJ card
+    matchedDJ = "SDRV";
   } else if (highest === 'b') {
-    matchedDJ = "Silvia"; // Replace with your DJ card
+    matchedDJ = "Silvia"; 
   } else {
-    matchedDJ = "Alex_Miller"; // Replace with your DJ card
+    matchedDJ = "Alex_Miller"; 
   }
-
-  displayResult(matchedDJ); // Show the result
+  displayResult(matchedDJ)
 }
 
 function displayResult(matchedDJ) {
-  hideAllSlides(); // Hide all slides
-  
-  // Hide all DJ containers
+  let slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[finalSlideIndex + 1].style.display = "block";
+
   document.getElementById("SDRV").style.display = "none";
   document.getElementById("Silvia").style.display = "none";
   document.getElementById("Alex_Miller").style.display = "none";
 
   // Show the matched DJ container
-  if (matchedDJ === 'SDRV') {
-    document.getElementById("SDRV").style.display = "block";
-  } else if (matchedDJ === 'Silvia') {
-    document.getElementById("Silvia").style.display = "block";
-  } else {
-    document.getElementById("Alex_Miller").style.display = "block";
-  }
+  document.getElementById(matchedDJ).style.display = "flex";
 
-  // Show the results slide
-  document.getElementById("q6").style.display = "block"; // Assuming q6 is your results slide
+  // results slide
+  document.getElementById("q6").style.display = "flex"; 
 }
 

@@ -5,7 +5,6 @@ body {
     font-style: normal;
     font-size: 13px;
     letter-spacing: .03em;
-    line-height: 1.8em;
     text-transform: none;
     color: #666;
     height: 100%;
@@ -72,7 +71,7 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-#SDRV{
+#SDRV, #Silvia, #Alex_Miller{
   position: absolute;
   width: 70%;
 
@@ -96,7 +95,6 @@ img {vertical-align: middle;}
   margin-bottom: auto;
   margin-top: center;
   position: absolute ;
-  width: 60%;
 }
 .img_bg_b{
   overflow: hidden;
@@ -110,8 +108,6 @@ img {vertical-align: middle;}
   margin-bottom: auto;
   margin-top: center;
   width: 30%;
-
-  
 }
 .img_bg_end_b{
   overflow: hidden;
@@ -120,8 +116,11 @@ img {vertical-align: middle;}
 }
 
 #h_1{
-  top: 10em;
+  top: 10vh;
   position: absolute;
+  display: flex;
+}
+#h1_top{
   display: flex;
 }
 /* Caption text */
@@ -161,7 +160,7 @@ img {vertical-align: middle;}
 #refresh {
   z-index: 1000;
   position: absolute;
-  bottom: 10em;
+  bottom: 22vh;
 }
 .section_bg{
   top: 50%;
@@ -170,16 +169,16 @@ img {vertical-align: middle;}
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  
 }
 h1{
-  color: #f2f2f2;
+  color: black;
   z-index: 1000;
+  padding-right: 12px;
 }
 h2{
   color: #f2f2f2;
 }
-p{
+p, #genre{
   color: #f2f2f2;
   font-size: 12px;
   padding: 4px 12px;
